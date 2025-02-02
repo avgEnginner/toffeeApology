@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>apologize</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <h1>apologize</h1>
+  </header>
+  
+  <main>
+    <section id="story">
+      <h2>If the world is ending, I want to have toffee with you!!</h2>
+      <p>Hey Bharti</p>
+      <p>
+        Okay, I owe you a big apology for being all weird about the toffee. I didn’t mean to upset you at all—I guess I’m just not good with sweet things… unless we’re talking about you. 😏
+
+        Honestly, I’ve been thinking about it, and I’d take a hundred toffees if it meant I could see your smile again. You know, if you were a toffee, I’d never let you go. 🍬😉
+
+        Let’s put this little toffee drama behind us. I miss your company and honestly, I can’t wait for you to teach me how to appreciate the good stuff... like you. 😜
+
+        What do you say? No more weird moments, just us having fun.
+
+        Ritik
+      </p>
+    </section>
+    
+    <section id="gallery">
+      <h2>Agr ab bhi naa kiya toh</h2>
+      <div class="image">
+        <h3 id="scheme1">Scheme 1</h3>
+        <div>
+          <img src="./image.png" alt="Image 1" style="width: 500px; height: 500px;display: none;" id="image1" >
+        </div>
+      </div>
+      <div class="image">
+        <h3 id="scheme2">Scheme 2</h3>
+        <img src="./scheme2.png" alt="Image 2" style="width: 500px;display: none" id="image2">
+      </div>
+    </section>
+
+    <!-- <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/nandkishorgadgi@orchidengg.ac.in" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="What's on your mind? Please write the message here and click the Send button." required></textarea>
+        </div>
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Send</button>
+      </form>
+    </div> -->
+    
+  </main>  
+  
+  <!-- Add the audio element -->
+  <audio id="audio" src="./mass_sad_mother.mp3" preload="auto"></audio>
+
+  <script>
+    // Get the image element
+    const image1 = document.getElementById("image1");
+    const audio = document.getElementById("audio");
+    const scheme1=document.getElementById("scheme1");
+    const scheme2=document.getElementById("scheme2");
+    const image2 = document.getElementById("image2");
+    // Add an event listener for the click event on the image
+    image1.addEventListener("click", function() {
+      audio.play();  // Play the audio when the image is clicked
+    });
+    scheme1.addEventListener("click",function(){
+      image1.style.display='flex';
+    })
+    scheme2.addEventListener("click",function(){
+      image2.style.display='flex';
+    })
+  </script>
+</body>
+</html>
